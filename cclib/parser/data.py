@@ -85,6 +85,7 @@ class ccData(object):
         vibdisps -- cartesian displacement vectors (array[3], delta angstrom)
         vibfreqs -- vibrational frequencies (array[1], 1/cm)
         vibirs -- IR intensities (array[1], km/mol)
+        vibmass -- Vibrational reduced mass (array[1], Da)
         vibramans -- Raman intensities (array[1], A^4/Da)
         vibsyms -- symmetries of vibrations (list of strings)
     (1) The term 'array' refers to a numpy array
@@ -158,6 +159,7 @@ class ccData(object):
        "vibdisps":         Attribute(numpy.ndarray,    'displacement',                'vibrations'),
        "vibfreqs":         Attribute(numpy.ndarray,    'frequencies',                 'vibrations'),
        "vibirs":           Attribute(numpy.ndarray,    'IR',                          'vibrations:intensities'),
+       "vibmass":          Attribute(numpy.ndarray,    'Reduced Mass',                'vibrations'),
        "vibramans":        Attribute(numpy.ndarray,    'raman',                       'vibrations:intensities'),
        "vibsyms":          Attribute(list,             'vibration symmetry',          'vibrations')
     }
